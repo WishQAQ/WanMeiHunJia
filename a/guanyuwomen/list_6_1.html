@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>婚礼之家 - 用心办好您的婚礼</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<link rel="stylesheet" href="/templets/zzxhao.com/style/style.css" />
+		<link rel="stylesheet" href="/templets/zzxhao.com/style/raiders.css" />	
+	</head>
+	<body>
+		<div class="global_wrap">
+		  	
+		  	<div class="topic_header">
+			  <div class="tpheader_wrapper">
+			  	   <div class="logo">
+			  	   </div>
+			  	    <ul class="nav">
+						<li><a href="/">首页</a></li>
+						
+						<li><a href="/a/hunligonglue/">婚礼攻略</a></li>
+						
+						<li><a href="/a/xinniangbizhi/">新娘必知</a></li>
+						
+						<li><a href="/a/sirendingzhi/">私人定制</a></li>
+						
+						<li><a href="/a/xinwenzhongxin/">新闻中心</a></li>
+						
+			  	   </ul>
+			  	   <div class="tel">
+			  	   	     <p>全国统一客服电话</p>
+		      	         <h2>400-018-1111</h2>
+			  	   </div>
+			  </div>
+			</div><!--topic_header end-->
+		    <div class="banner">
+		    	<div class="go_btn">	
+		    	</div>
+		    </div>
+		    
+		    <div class="row1">
+		    	<div class="con">
+		    		<p class="title">
+		    			关于我们
+		    		</p>
+					
+					<p style="padding: 50px;font-size: 18px;">
+						
+					</p>
+		    	</div>
+		    </div>
+		    
+		   
+		    <div class="footer">
+	     	 <div class="wrapper">
+	     		<div class="top_con">
+	     			<div class="col_l">
+	     				
+	     			</div>
+	     			<div class="con col_l">
+						<span>400-018-1111</span>
+	     			</div>
+	     			<div class="col_r">
+	     				
+	     			</div>
+	     		</div>
+	     		<div class="bottom_con">
+	     			<ul>
+						<li class="first"><a href="/" >首页</a></li>
+						<li><a href="/a/hunligonglue/">婚礼攻略</a></li>
+						<li><a href="/a/xinniangbizhi/">新娘必知</a></li>
+						<li><a href="/a/guanyuwomen/">关于我们</a></li>
+						<li><a href="/a/lianxiwomen/">联系我们</a></li>
+	     			</ul>
+	     		</div>
+	     	</div>
+	     	<div style="clear: both;"></div>
+	     	<div class="last_" style="color: #737373;">
+				版权所有：济南永东网络科技有限公司 鲁ICP备17012804号-1
+	     	</div>
+	     </div> 
+		 </div>
+		</div><!--global_wrap-->
+			<div class="inBox">
+			<div class="popBox" id="form">
+				<a class="popBox_close" id="popBox_close">
+					<img src="/templets/zzxhao.com/img/popBox_close.png"/>
+				</a>
+				<h2>轻松搞定你的婚礼</h2>
+				<p>为您打造一场高性价比的婚礼</p>
+				<form>
+					<div class="form">
+					  <div class="form-control">
+						<select class="city_select">
+							<option>
+                                                             婚礼城市
+                                 </option>
+	      	  		   	 	     <option v-for="yx in YX">
+                                    {{yx.text}}
+                                 </option>
+						</select>
+					  </div>
+					  <div class="form-control">
+						  <input type="text" placeholder="选择婚期" id="date"/>
+					  </div>
+					  <div class="form-control">
+						 <input type="text" placeholder="姓名" v-model="name" />
+					  </div>
+					  <div class="form-control">
+						 <input type="text" placeholder="手机号" v-model="tel"/>
+					  </div>
+				  </div>
+				   <div class="form-group">
+				   	  <a v-on:click="action">立即提交</a>
+				   </div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="/templets/zzxhao.com/style/jquery-2.1.1.min.js" ></script>
+		<script type="text/javascript" src="/templets/zzxhao.com/style/gather.js" ></script>
+	    <script type="text/javascript" src="/templets/zzxhao.com/style/vue.js" ></script>
+		<script type="text/javascript" src="/templets/zzxhao.com/style/city.js" ></script>
+        <script type="text/javascript" src="/templets/zzxhao.com/style/WdatePicker.js" ></script>
+		<script type="application/javascript">
+		      var app = new Vue({
+			    el: '#form',		
+			  data:{	   		  
+	   		   	name:"",
+	   		  	tel:"",
+	   		  	yuyuetime:"",
+	   		   	YX:""
+	   		  },
+	   		 mounted:function(){
+		          this.YX=getList();
+	         },  
+	   		  methods:{
+	   		  	action:function(){
+	   		  		if($(".city_select").find("option:selected").val()=="婚礼城市"){
+	   		 		  	hunli.alert('请确定城市！');
+	   		 		}else if($("#date").val().length<=0){
+	   		 			hunli.alert('请选择婚期！');
+	   		 		}
+	   		 		else if(this.name.length<=0){
+                        hunli.alert('姓名不能为空！'); 	
+	  	 	        }else if(this.tel.length<=0){
+                         hunli.alert('手机号不能为空！');  	
+	  	 	        }  
+	  	 	        else if(!(/^1[34578]\d{9}$/.test(this.tel))){
+                        hunli.alert('手机号格式不对！');   
+	  	 	        }else{
+	  	 	        	var params={
+		                tel:this.tel,
+		                name:this.name,
+		                city:$(".city_select").find("option:selected").val(),
+		                yuyuetime:$("#date").val(),
+		                callback:function(){
+					          hunli.alert('恭喜您！已提交成功！'); 
+		                  }
+	                   }
+	                  onsubmit(params);	
+	  	 	        }
+	   		  	}
+	   		  }
+	         })
+		
+		      $(document).ready(function() {
+		      	  $("#date").dateSelect();
+	             var row1Top = $("#row1").offset().top - 442;
+	             var row2Top = $("#row2").offset().top - 442;
+	             var row3Top = $("#row3").offset().top - 442;
+	             var row4Top = $("#row4").offset().top - 442;
+	             var row5Top = $("#row5").offset().top - 442;
+	             var scrolltop = $(document).scrollTop();
+	                  active(scrolltop, row1Top, "row1-con");
+	                  active(scrolltop, row2Top, "row2-con");
+	                  active(scrolltop, row3Top, "row3-con");
+	                  active(scrolltop, row4Top, "row4-con");
+	                  active(scrolltop, row5Top, "row5-con");
+	             $(window).scroll(function(event) {
+		               scrolltop = $(document).scrollTop();
+		               active(scrolltop, row1Top, "row1-con");
+		               active(scrolltop, row2Top, "row2-con");
+		               active(scrolltop, row3Top, "row3-con");
+		               active(scrolltop, row4Top, "row4-con");
+		               active(scrolltop, row5Top, "row5-con");
+	             }); 
+	             $(".go_btn").hover(function(){
+					  $(".inBox").fadeIn();
+				    })
+				  $("#popBox_close").click(function(){
+					$(".inBox").hide();
+				  })
+				   $("input").placeholder(); 
+             })
+		      function active(scroTop, inerTop, inner) {
+		          if(scroTop >= inerTop) {
+			          $("#" + inner).animate({
+				         top: 100 + "px"
+			     }, 500);
+		        }
+	          }
+	</script>
+	</body>
+</html>
+<!--侧边固定客服模块-->
+<!--<script language="javascript" src="/templets/zzxhao.com/style/LsJS.aspx"></script>-->

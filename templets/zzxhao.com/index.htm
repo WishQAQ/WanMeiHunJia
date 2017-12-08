@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+    <meta name="description" content="{dede:global.cfg_description/}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/style.css"/>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/index.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
+
+    <script>
+        function closeswt() {
+            $('#f_box').hide();
+        }
+    </script>
+</head>
+<body>
+<div class="global_wrap">
+    <div class="header">
+        <div class="header_wrapper">
+            <div class="header_logo">
+
+            </div>
+            <div class="header_phone">
+                <p>全国统一客服电话</p>
+                <h2>{dede:global.cfg_beian/}</h2>
+            </div>
+            <ul class="collapse">
+                <li class="first">
+                    <a href="javascript:;">一站式婚庆服务</a>
+                    <ul>
+                        <li>
+                            <p>婚礼策划</p>
+                            <div class="show">
+                                量身打造</br>
+                                私人订制
+                            </div>
+                        </li>
+                        <li>
+                            <p>婚礼摄影</p>
+                            <div class="show">
+                                独特视角</br>
+                                胜似明星
+                            </div>
+                        </li>
+                        <li>
+                            <p>婚礼摄像</p>
+                            <div class="show">
+                                电影级</br>
+                                视觉表现
+                            </div>
+                        </li>
+                        <li>
+                            <p>婚礼司仪</p>
+                            <div class="show">
+                                别具一格</br>
+                                优雅大方
+                            </div>
+                        </li>
+                        <li>
+                            <p>婚礼跟妆</p>
+                            <div class="show">
+                                助理式</br>
+                                贴心服务
+                            </div>
+                        </li>
+                        <li>
+                            <p>婚纱摄影</p>
+                            <div class="show">
+                                风格多样</br>
+                                价格亲民
+                            </div>
+                        </li>
+                        <li>
+                            <p>婚纱礼服</p>
+                            <div class="show">
+                                品质之美</br>
+                                心动之选
+                            </div>
+                        </li>
+                        <li>
+                            <p>婚车租赁</p>
+                            <div class="show">
+                                低于市场</br>
+                                30%以上
+                            </div>
+                        </li>
+                        <li>
+                            <p>婚宴酒店</p>
+                            <div class="show">
+                                菜品精美</br>
+                                精美环境
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="bg"></div>
+                </li>
+                <li><a href="{dede:global.cfg_indexurl/}">首页</a></li>
+                {dede:channel row='4' type ='top' currentstyle="
+                <li><a href='~typelink~' class='thisclass'>~typename~</a></li>
+                " }
+                <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                {/dede:channel}
+                <li><a href="tencent://message/?uin=487778743&Site=-&Menu=yes">在线咨询</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner_">
+            <ul class="banList">
+                <li class="active">
+                    <a href="tencent://message/?uin=487778743&Site=-&Menu=yes "></a>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="fomW">
+                <div class="jsNav">
+                    <a href="javascript:;" class="trigger current"></a>
+                    <a href="javascript:;" class="trigger"></a>
+                    <a href="javascript:;" class="trigger"></a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <p>奢华浪漫系</p>
+                    <div class="show">
+                    </div>
+                </li>
+                <li>
+                    <p>唯美梦幻系</p>
+                    <div class="show">
+                    </div>
+                </li>
+                <li>
+                    <p>简约清新系</p>
+                    <div class="show">
+                    </div>
+                </li>
+                <li>
+                    <p>复古中国风</p>
+                    <div class="show">
+                    </div>
+                </li>
+            </ul>
+            <div class="form" id="form">
+                <div class="enter">
+                    <div class="header_">
+                        我要办婚礼
+                    </div>
+
+
+                    <!--我要办婚礼-->
+                    <script language="javascript" src="../include/dedeajax2.js"></script>
+                    <div class="list_">
+                        <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+                            <input type="hidden" name="action" value="post">
+                            <input type="hidden" name="diyid" value="1">
+                            <input type="hidden" name="do" value="2">
+                            <table class="hlfrom" cellpadding="0" cellspacing="1">
+                                <tbody>
+                                <tr>
+                                    <td align="right" valign="top"></td>
+                                    <td><select name="cs">
+                                        <option value="西安">西安</option>
+                                        <option value="咸阳">咸阳</option>
+                                        <option value="渭南">渭南</option>
+                                        <option value="延安">延安</option>
+                                        <option value="宝鸡">宝鸡</option>
+                                        <option value="榆林">榆林</option>
+                                        <option value="铜川">铜川</option>
+                                        <option value="汉中">汉中</option>
+                                        <option value="安康">安康</option>
+                                        <option value="商洛">商洛</option>
+                                    </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" valign="top"></td>
+                                    <td><input name="rq" placeholder="日期" type="text" id="rq" class="intxt">
+                                        <script language="javascript" type="text/javascript">
+                                            Calendar.setup({
+                                                inputField: "rq",
+                                                ifFormat: "%Y-%m-%d %H:%M",
+                                                showsTime: true,
+                                                timeFormat: "24"
+                                            });
+                                        </script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" valign="top"></td>
+                                    <td><input type="text" name="xm" id="xm" class="intxt"
+                                               placeholder="姓名">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" valign="top"></td>
+                                    <td><input type="text" name="tel" id="tel" class="intxt"
+                                               placeholder="手机号码">
+                                    </td>
+                                </tr>
+                                <input type="hidden" name="dede_fields" value="cs,select;rq,datetime;xm,text;tel,int">
+                                <input type="hidden" name="dede_fieldshash" value="2bcfe9ae42857abdacdc1c5923eed86d">
+                                </tbody>
+                            </table>
+                            <div align="center">
+                                <input type="submit" name="submit" value="提 交" class="coolbg btn">
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <!--end-->
+
+                </div>
+                <div class="pub_show">
+                    <img src="{dede:global.cfg_templets_skin/}/img/banner_back.png"/>
+                </div>
+            </div>
+        </div>
+    </div><!-- header end-->
+
+    <div class="add1">
+        <div class="wrapper">
+            <ul>
+                <li class="v_1">
+                    <img src="{dede:global.cfg_templets_skin/}/img/add1_i1.png"/>
+                    <!--<div class="con1">
+                       <p class="main">
+                               婚礼策划时间
+                       </p>
+                       <div class="con">
+                              <p>2</p><p>+</p><p>7</p>
+                       </div>
+                    </div>-->
+                </li>
+                <li class="center v_2">
+                    <img src="{dede:global.cfg_templets_skin/}/img/add1_i2.png"/>
+
+                    <!--<div class="con2">
+                       <p class="main">
+                               预算成本控制
+                       </p>
+                       <div class="con">
+
+                       </div>
+                    </div>-->
+                </li>
+                <li class="v_3">
+                    <img src="{dede:global.cfg_templets_skin/}/img/add1_i3.png"/>
+
+                    <!--<div class="con3">
+                      <p class="main">
+                              婚礼质量把控
+                      </p>
+                      <div class="con">
+
+                      </div>
+                   </div>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row row1">
+        <div class="wrapper">
+            <h2 class="title">五步轻松制定您的婚礼</h2>
+            <p class="sub_title">轻松获得属于您的完美婚礼</p>
+            <div class="con fn-clear">
+                <div>
+                    <div class="i_con">
+                        <img src="{dede:global.cfg_templets_skin/}/img/b_row1_i1.png"/>
+                    </div>
+                    <p>免费申请方案</p>
+                    <div class="step"></div>
+                </div>
+                <div>
+                    <div class="i_con">
+                        <img src="{dede:global.cfg_templets_skin/}/img/b_row1_i2.png"/>
+                    </div>
+                    <p>组建婚礼团队</p>
+                    <div class="step"></div>
+                </div>
+                <div>
+                    <div class="i_con">
+                        <img src="{dede:global.cfg_templets_skin/}/img/b_row1_i3.png"/>
+                    </div>
+                    <p>确定方案及报价</p>
+                    <div class="step"></div>
+                </div>
+                <div>
+                    <div class="i_con">
+                        <img src="{dede:global.cfg_templets_skin/}/img/b_row1_i4.png"/>
+                    </div>
+                    <p>婚礼执行</p>
+                    <div class="step"></div>
+                </div>
+                <div style="margin-right: 0px;">
+                    <div class="i_con">
+                        <img src="{dede:global.cfg_templets_skin/}/img/b_row1_i5.png"/>
+                    </div>
+                    <p>满意付款</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row2">
+        <div class="wrapper">
+            <h2 class="title">项婚礼服务细节</h2>
+            <p class="sub_title">九阶段39项完美婚礼服务</p>
+        </div>
+        <div class="con">
+            <ul>
+                <li>
+                    <img class="f_i" src="{dede:global.cfg_templets_skin/}/img/row2_i2.png"/>
+                    <p class="f_p">专人面谈</br>沟通思路</p>
+                    <img class="show" src="{dede:global.cfg_templets_skin/}/img/show1.png"/>
+                </li>
+                <li>
+                    <img class="f_i" src="{dede:global.cfg_templets_skin/}/img/row2_i3.png"/>
+                    <p class="f_p">顾问签约</br>备婚开始</p>
+                    <img class="show" src="{dede:global.cfg_templets_skin/}/img/show2.png"/>
+                </li>
+                <li>
+                    <img class="f_i" src="{dede:global.cfg_templets_skin/}/img/row2_i4.png"/>
+                    <p class="f_p">婚礼方案</br>国际设计</p>
+                    <img class="show" src="{dede:global.cfg_templets_skin/}/img/show3.png"/>
+                </li>
+                <li>
+                    <img class="f_i" src="{dede:global.cfg_templets_skin/}/img/row2_i5.png"/>
+                    <p class="f_p">现场需求</br>专人确认</p>
+                    <img class="show" src="{dede:global.cfg_templets_skin/}/img/show4.png"/>
+                </li>
+                <li>
+                    <img class="f_i" src="{dede:global.cfg_templets_skin/}/img/row2_i6.png"/>
+                    <p class="f_p">婚礼物品</br>协力准备</p>
+                    <img class="show" src="{dede:global.cfg_templets_skin/}/img/show5.png"/>
+                </li>
+                <li>
+                    <img class="f_i" src="{dede:global.cfg_templets_skin/}/img/row2_i7.png"/>
+                    <p class="f_p">服务人员</br>贴心安排</p>
+                    <img class="show" src="{dede:global.cfg_templets_skin/}/img/show6.png"/>
+                </li>
+                <li>
+                    <img class="f_i" src="{dede:global.cfg_templets_skin/}/img/row2_i8.png"/>
+                    <p class="f_p">仪式安排</br>精细到秒</p>
+                    <img class="show" src="{dede:global.cfg_templets_skin/}/img/show7.png"/>
+                </li>
+                <li>
+                    <img class="f_i" src="{dede:global.cfg_templets_skin/}/img/row2_i9.png"/>
+                    <p class="f_p">婚礼当日</br>全程管家</p>
+                    <img class="show" src="{dede:global.cfg_templets_skin/}/img/show8.png"/>
+                </li>
+                <li>
+                    <img class="f_i" src="{dede:global.cfg_templets_skin/}/img/row2_i10.png"/>
+                    <p class="f_p">礼成之后</br>交付影音</p>
+                    <img class="show" src="{dede:global.cfg_templets_skin/}/img/show9.png"/>
+                </li>
+            </ul>
+            <a href="tencent://message/?uin=487778743&Site=-&Menu=yes" >了解更多></a>
+        </div>
+    </div>
+
+    <div class="add2">
+        <div class="wrapper fn-clear">
+            <div class="col_l">
+                <h2>
+                    从0想法到
+                </h2>
+                <p class="title">了解婚礼全过程只需</p>
+                <img src="{dede:global.cfg_templets_skin/}/img/add2_i1.png"/>
+                <p class="bt">轻松获得属于您的完美婚礼 ^_^</p>
+            </div>
+            <div class="col_r">
+                <div class="con ad_hover">
+                    <div>
+                        在线预约婚礼策划
+                        <div class="step">1</div>
+                    </div>
+                    <div>
+                        策划师了解具体需求
+                        <div class="step">2</div>
+                    </div>
+                </div>
+                <div class="fn-clear"></div>
+                <div class="con ad_hover">
+                    <div>
+                        婚礼方案初步设计
+                        <div class="step">3</div>
+                    </div>
+                    <div>
+                        新人提出改进需求
+                        <div class="step">4</div>
+                    </div>
+                </div>
+                <div class="bt_con ad_hover">
+                    <div>
+                        修改方案最终交付
+                        <div class="step">4</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row3">
+        <div class="row_banner">
+            <ul class="banList" onclick="openZoosUrl('chatwin');">
+                <a href="tencent://message/?uin=487778743&Site=-&Menu=yes">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </a>
+
+            </ul>
+            <div class="fomW">
+                <div class="jsNav">
+                    <a href="JavaScript:;" class="trigger current"></a>
+                    <a href="JavaScript:;" class="trigger"></a>
+                    <a href="JavaScript:;" class="trigger"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row4">
+        <div class="wrapper">
+            <h2 class="title">精选婚礼创意</h2>
+            <P class="sub_title">只为你期待的婚礼</P>
+            <div class="con">
+                <div class="i_1">
+                    <img src="{dede:global.cfg_templets_skin/}/img/row4_i1.png"/>
+                    <div class="show">
+                        <p>奢华浪漫系</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/baner_more.png"/>
+                    </div>
+                </div>
+                <div class="i_2">
+                    <img src="{dede:global.cfg_templets_skin/}/img/row4_i2.png"/>
+                    <div class="show">
+                        <p>唯美梦幻系</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/baner_more.png"/>
+                    </div>
+                </div>
+                <div class="i_3">
+                    <img src="{dede:global.cfg_templets_skin/}/img/row4_i3.png"/>
+                    <div class="show">
+                        <p>简约清新系</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/baner_more.png"/>
+                    </div>
+                </div>
+                <div class="i_4">
+                    <img src="{dede:global.cfg_templets_skin/}/img/row4_i4.png"/>
+                    <div class="show">
+                        <p>复古中国风</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/baner_more.png"/>
+                    </div>
+                </div>
+                <p class="clear"></p>
+            </div>
+
+            <div style="clear: both;"></div>
+            <ul>
+                <li><a href="javascript:;">梦幻</a></li>
+                <li><a href="javascript:;">奢华</a></li>
+                <li><a href="javascript:;">时尚</a></li>
+                <li><a href="javascript:;">个性</a></li>
+                <li><a href="javascript:;">复古</a></li>
+                <li><a href="javascript:;">中式</a></li>
+            </ul>
+            <div style="clear: both;"></div>
+
+            <a class="go_bt" href="tencent://message/?uin=487778743&Site=-&Menu=yes">
+                点击咨询婚礼顾问&nbsp;&nbsp;了解报价
+            </a>
+
+        </div>
+    </div>
+    <div class="row row6">
+        <div class="wrapper">
+            <h2 class="title">
+                他们选择了我们订制婚礼
+            </h2>
+            <p class="sub_title">朋友们享受到高性价比的婚礼体验</p>
+            <div class="con">
+                <div>
+                    <img src="{dede:global.cfg_templets_skin/}/img/row6_i1.png">
+                    <h3>彭小姐</h3>
+                    <p class="tel">186****5986</p>
+                    <p>毕竟结婚是大事不敢马虎，看了婚礼之家网站，感觉很靠谱才放心合作。在合作的过程中一直都很愉快。婚礼顾问小艾，很耐心，不但满足了我很多苛刻的要求，而且，还送了一些增值服务，赞。</p>
+                </div>
+                <div>
+                    <img src="{dede:global.cfg_templets_skin/}/img/row6_i2.png">
+                    <h3>张先生</h3>
+                    <p class="tel">135****3470</p>
+                    <p>找婚庆公司的时候对比了又对比，又是跑婚博会，又是跑门店，不是价格高的吓死人，就是那水平看的很一般，最终在百度上找到了婚礼之家，感觉靠谱多了。</p>
+                </div>
+                <div>
+                    <img src="{dede:global.cfg_templets_skin/}/img/row6_i3.png">
+                    <h3>伍小姐</h3>
+                    <p class="tel">155****1612</p>
+                    <p>咨询后马上就接到了婚礼顾问的电话，感觉服务很细致，了解了我和老公的婚期后，给我们做了整套的策划草案，主要是创意就是我们想要的那类风格，的确不错。</p>
+                </div>
+                <div>
+                    <img src="{dede:global.cfg_templets_skin/}/img/row6_i4.png">
+                    <h3>黄小姐</h3>
+                    <p class="tel">186****2340</p>
+                    <p>闺蜜结婚的时候我是伴娘，和闺蜜聊天才知道有这个网站，自己结婚的时候果断在婚礼之家定的，没有辜负我的期待，我们的现场很漂亮，很大气，环节超感人。策划师很给力。</p>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <div class="add3">
+        <div class="wrapper">
+            <p class="title">
+                每<span>1小时</span>就有一对新人在婚礼之家选择一站式婚礼服务
+            </p>
+            <div accesskey="con">
+                <div class="main">
+                    <span>为您打造一场高性价比的婚礼</span>
+                </div>
+                <div class="minute">
+                    Every<span></span>minutes
+                    <div class="num">60′</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row5">
+        <div class="wrapper">
+            <h2 class="title">
+                <img src="{dede:global.cfg_templets_skin/}/img/row5_i1.png"/>
+            </h2>
+            <p class="sub_title">专业婚庆服务机构有效保障你的婚礼</p>
+            <div class="con">
+                <ul>
+                    <li>
+                        <h2>品牌优势</h2>
+                        <p>专注打造金牌品牌</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/row5_s1.png"/>
+                    </li>
+                    <li>
+                        <h2>实力保障</h2>
+                        <p>实景体验 案例丰富</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/row5_s2.png"/>
+                    </li>
+                    <li>
+                        <h2>规范流程</h2>
+                        <p>多部门标准化分工</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/row5_s3.png"/>
+                    </li>
+                    <li style="margin-right: 0px;">
+                        <h2>优秀团队</h2>
+                        <p>业内精英多对一服务</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/row5_s4.png"/>
+                    </li>
+                    <li style="clear: left;">
+                        <h2>婚礼经验</h2>
+                        <p>多年经验 口碑传播</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/row5_s5.png"/>
+                    </li>
+                    <li>
+                        <h2>创新能力</h2>
+                        <p>引领婚礼时尚潮流</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/row5_s6.png"/>
+                    </li>
+                    <li>
+                        <h2>服务品质</h2>
+                        <p>客服跟踪 高端订制</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/row5_s7.png"/>
+                    </li>
+                    <li style="margin-right: 0px;">
+                        <h2>消费透明</h2>
+                        <p>欺骗隐瞒行为0容忍</p>
+                        <img src="{dede:global.cfg_templets_skin/}/img/row5_s8.png"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row7">
+        <div class="wrapper">
+            <h2 class="title">婚礼三大区域创新设计</h2>
+            <p class="sub_title">资深婚礼策划师会充分利用婚礼场地</p>
+            <div class="con">
+                <div class="img_scroll">
+                    <div class="img_group">
+                        <ul>
+                            <li><img src="{dede:global.cfg_templets_skin/}/img/row7_i1.png"></li>
+                            <li><img src="{dede:global.cfg_templets_skin/}/img/row7_i2.png"></li>
+                            <li><img src="{dede:global.cfg_templets_skin/}/img/row7_i3.png"></li>
+                            <li><img src="{dede:global.cfg_templets_skin/}/img/row7_i4.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="clic_le" title="上一页">
+                    <img src="{dede:global.cfg_templets_skin/}/img/cli_le.png"/>
+                </a>
+                <a class="clic_ri" title="下一页">
+                    <img src="{dede:global.cfg_templets_skin/}/img/cli_ri.png"/>
+                </a>
+            </div>
+            <ul class="nav_show">
+                <li>场景布缦不限定长度</li>
+                <li>标配舞台灯光至少4台</li>
+                <li>舞台设计更加饱满</li>
+                <li>灯光布局设计更加合理</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row row8">
+        <div class="wrapper">
+            <h2 class="title">一站式服务 让你的婚礼更省心</h2>
+            <p class="sub_title">专业团队 优质资源</p>
+            <div class="con">
+                <div>
+                    <p>婚礼策划</p>
+                </div>
+                <div>
+                    <p>婚礼摄影</p>
+                </div>
+                <div>
+                    <p>婚礼跟妆</p>
+                </div>
+                <div>
+                    <p>婚礼司仪</p>
+                </div>
+                <div>
+                    <p> 婚纱礼服</p>
+                </div>
+                <div>
+                    <p> 婚宴酒店</p>
+                </div>
+                <div>
+                    <p> 全球旅拍</p>
+                </div>
+                <div>
+                    <p> 婚车预定</p>
+                </div>
+                <div>
+                    <p> 婚礼礼品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row9">
+        <h2 class="title">主题布置完美呈现 分毫不差</h2>
+        <p class="sub_title">108条标准执行流程、主题还原度精确到毫米</p>
+    </div>
+
+    <div class="row row10">
+        <div class="wrapper">
+            <h2 class="title">媒体报道</h2>
+            <div class="con">
+                <div>
+                    <p>低于市场同类婚庆公司30%以上价格......</p>
+                </div>
+                <div>
+                    <p>婚庆市场非常混乱，没有一个标准，婚礼之家竖立行业标杆......</p>
+                </div>
+                <div>
+                    <p>对于新人来说，婚礼之家相当于把婚庆不透明的服务全部剥离，为新人......</p>
+                </div>
+                <div>
+                    <p>解决年轻人婚礼的问题。我们不做跟风狗。只做高性价比的服务。哪怕市场再小......</p>
+                </div>
+                <div>
+                    <p>让靠谱的婚礼为一群优秀的年轻人服务......</p>
+                </div>
+                <div>
+                    <p>新人可以快速找到自己婚庆顾问，满足婚礼的不同需求......</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top_con">
+                <div class="col_l">
+
+                </div>
+                <div class="con col_l">
+                    <span>{dede:global.cfg_beian/}</span>
+                </div>
+                <a href="tencent://message/?uin=487778743&Site=-&Menu=yes">
+                <div class="col_r"  style="cursor:pointer">
+
+                </div>
+                </a>
+            </div>
+            <div class="bottom_con">
+                <ul>
+                    <li class="first"><a href="{dede:global.cfg_indexurl/}">首页</a></li>
+                    {dede:type row='4' typeid ='1'}
+                    <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                    {/dede:type}
+                    {dede:type row='4' typeid ='2'}
+                    <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                    {/dede:type}
+                    {dede:type row='4' typeid ='6'}
+                    <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                    {/dede:type}
+                    {dede:type row='4' typeid ='7'}
+                    <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                    {/dede:type}
+                </ul>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="last_" style="color: #444040;">
+            {dede:global.cfg_powerby/}
+        </div>
+    </div>
+</div>
+
+<!--弹出式客服模块-->
+<!--<div class="p_f_box" id="f_box"> -->
+<!--<div class="con">-->
+<!--<img src="{dede:global.cfg_templets_skin/}/img/sw.png"/>-->
+<!--<a class="close" id="f_box_close" onclick="closeswt();"></a>-->
+<!--<a class="advisory" href="javascript:void(0);" onclick="openZoosUrl('chatwin');"></a>-->
+<!--</div>-->
+<!--</div>-->
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/city.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/gather.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/jquery.banner.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/WdatePicker.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/scrollimg.js"></script>
+<script>
+    $(function () {
+        $(".pass_box .close").click(function () {
+            $('.pass_box').hide();
+        });
+
+        $(".banner_").swBanner();
+        $(".row_banner").swBanner();
+        $(".row2 .con ul>li").hover(function () {
+            $(this).addClass("active");
+        }, function () {
+            $(this).removeClass("active");
+        })
+        $("input").placeholder();
+    })
+
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?46b8e483300dcaf0738f3f61f76462c5 ";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>
+
+<!--侧边固定客服模块-->
+<!--<script language="javascript" src="{dede:global.cfg_templets_skin/}/style/LsJS.aspx"></script>-->

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/style.css" />
+    <link href="{dede:global.cfg_templets_skin/}/style/css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="topic_header">
+    <div class="tpheader_wrapper">
+        <div class="logo">
+        </div>
+        <ul class="nav">
+            <li><a href="{dede:global.cfg_indexurl/}">首页</a></li>
+            {dede:channel row='4'  type ='top'   currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
+            <li><a href="[field:typelink/]">[field:typename/]</a></li>
+            {/dede:channel}
+        </ul>
+        <div class="tel">
+            <p>全国统一客服电话</p>
+            <h2>{dede:global.cfg_beian/}</h2>
+        </div>
+    </div>
+</div><!--topic_header end-->
+
+<section id="mainbody">
+    <div class="news center">
+        <div class="mianbao">
+            {dede:field name='position'/}
+        </div>
+        <div class="nLeft">
+            <div class="newsList">
+                <ul>
+                    {dede:arclist pagesize ='10' row ='10'}
+                    <li>
+                        <div class="newsTitle">
+                            <h2><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+                            <div class="newsTitletag">
+                                <span>浏览量：[field:click/] </span>
+                            </div>
+                        </div>
+
+                        <div class="newsTxt">
+                            <div class="newsTxtImg"><img src="[field:picname/]"></div>
+                            <div class="newsTxtInfo">
+                                <div class="newsTag">
+                                    <span>[field:pubdate function="GetDateTimeMK(@me)" /]</span>
+                                </div>
+                                <div class="newsview">
+                                    [field:description function="cn_substr(@me,360)"/]...
+                                    <a href="[field:arcurl/]" target="_blank">[详情]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {/dede:arclist}
+                </ul>
+            </div>
+
+            <div class="page">
+                <a>
+                {dede:pagelist listitem="pre,pageno,next," listsize="3"/}
+                </a>
+            </div>
+        </div>
+        <div class="nRight">
+            <div class="History">
+                <ul>
+                    {dede:arclist mytypeid='6' titlelen='32' row='5'}
+                    <li>
+                        <div class="HistoryImg">
+                            <a href="[field:arcurl/]" target="_blank"><img
+                                    src="[field:picname/]"></a>
+                        </div>
+                        <div class="HistoryInfo">
+                            <h2><a href="[field:arcurl/]">[field:title/]...</a></h2>
+
+                        </div>
+                    </li>
+                    {/dede:arclist}
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+    <div class="wrapper">
+        <div class="top_con">
+            <div class="col_l">
+
+            </div>
+            <div class="con col_l">
+                <span>{dede:global.cfg_beian/}</span>
+            </div>
+            <a href="tencent://message/?uin=487778743&Site=-&Menu=yes">
+                <div class="col_r">
+
+                </div>
+            </a>
+
+        </div>
+        <div class="bottom_con">
+            <ul>
+                <li class="first"><a href="{dede:global.cfg_indexurl/}">首页</a></li>
+                {dede:type row='4' typeid ='1'}
+                <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                {/dede:type}
+                {dede:type row='4' typeid ='2'}
+                <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                {/dede:type}
+                {dede:type row='4' typeid ='6'}
+                <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                {/dede:type}
+                {dede:type row='4' typeid ='7'}
+                <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                {/dede:type}
+            </ul>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="last_" style="color: #737373;">
+        {dede:global.cfg_powerby/}
+    </div>
+</div>
+
+
+<!--侧边固定客服模块-->
+<!--<div class="kefu">-->
+    <!--<ul>-->
+        <!--<li class="top" style="display: none;"><a href="javascript:void(0);"-->
+                                                  <!--onclick="$(&#39;body,html&#39;).animate({scrollTop:0},200);return false;"></a>-->
+        <!--</li>-->
+        <!--<li class="tel">-->
+            <!--<a href="javascript:void(0);"-->
+               <!--onmouseover="$(this).next().show();$(this).addClass(&#39;cur&#39;);$(&#39;.kefu .ewmImg&#39;).hide();"></a>-->
+            <!--<div class="bohaoBox" style="display:none;"-->
+                 <!--onmouseleave="$(this).hide();$(this).prev().removeClass(&#39;cur&#39;);">-->
+                <!--<dl>-->
+                    <!--<dd><input name="telInput" id="telInput" type="text" class="api-lxb-cb-input bohaoInput"-->
+                               <!--placeholder="输入电话号码"></dd>-->
+                    <!--<dd><input name="callBtn" id="callBtn" type="button" class="bohaoSubmit" value="立即拨通"></dd>-->
+                <!--</dl>-->
+            <!--</div>-->
+        <!--</li>-->
+        <!--<li class="ewm">-->
+            <!--<a href="javascript:void(0);" onmouseover="$(this).next().show();$(&#39;.kefu .bohaoBox&#39;).hide();"-->
+               <!--onmouseout="$(this).next().hide();"></a>-->
+            <!--<div class="ewmImg"></div>-->
+        <!--</li>-->
+    <!--</ul>-->
+    <!--<script type="text/javascript">-->
+        <!--document.write('<script type="text/javascript"  data-lxb-uid="1824065" data-lxb-gid="115677" src="http://lxbjs.baidu.com/api/asset/api.js?t=' + new Date().getTime() + '" charset="utf-8"></scr' + 'ipt>');-->
+        <!--document.getElementById("callBtn").onclick = function () {-->
+            <!--lxb.call(document.getElementById("telInput"));-->
+        <!--};-->
+        <!--$(window).scroll(function () {-->
+            <!--setGotop();-->
+        <!--});-->
+
+        <!--function setGotop() {-->
+            <!--if ($(window).scrollTop() > 1200) {-->
+                <!--$('.kefu .top').show();-->
+            <!--} else {-->
+                <!--$('.kefu .top').hide();-->
+            <!--}-->
+        <!--}-->
+
+        <!--setGotop();-->
+    <!--</script>-->
+    <!--<script type="text/javascript" data-lxb-uid="1824065" data-lxb-gid="115677" src="{dede:global.cfg_templets_skin/}/newsStyle/api.js "-->
+            <!--charset="utf-8"></script>-->
+<!--</div>-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?46b8e483300dcaf0738f3f61f76462c5 ";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</body>
+</html>
+
+<!--侧边固定客服模块-->
+<!--<script language="javascript" src="{dede:global.cfg_templets_skin/}/style/LsJS.aspx"></script>-->

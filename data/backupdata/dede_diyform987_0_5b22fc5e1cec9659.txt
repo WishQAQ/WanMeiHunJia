@@ -1,0 +1,1 @@
+INSERT INTO `dede_diyform987` VALUES('16','0','Arquimedes','','','','20zirpel@nabu-hamburg.de','Damn, I wish I could think of sometnhig smart like that!','','','xIyYfgHtXMGAxWfrW');
